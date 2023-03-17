@@ -59,11 +59,17 @@ Feature: Default
     And User presses login button or presses enter
     Then user should see Please fill out this field text on the page
 
-  @UPGNX10-224
+
   Scenario: AC4- User should see the password in bullet signs by default while typing (like ****)
     Given user is on the login page
     When user enters password
     Then user should see bullet signs by default
+
+  @UPGNX10-224
+  Scenario: AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+    Given user is on the login page
+    When user enters Email and password
+    Then user checks if pressing enter is equivalent to press login
 
 
 
