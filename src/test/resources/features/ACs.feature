@@ -23,6 +23,10 @@ Feature: Default
     And User enters "salesmanager4@info.com" and "salesmanager"
     And User presses login button or presses enter
     Then user sees Wrong login/password message displayed
+    And user is on the login page
+    And User enters "salesmanager15@info.com" and "invalid password"
+    And User presses login button or presses enter
+    Then user sees Wrong login/password message displayed
 
 
   Scenario Template: AC2- "Wrong login/password" message should be displayed for invalid credentials (valid username-invalid password and invalid username-valid password)
@@ -30,16 +34,21 @@ Feature: Default
     And User enters "<invalid E-mail>" and "<valid password>"
     And User presses login button or presses enter
     Then user sees Wrong login/password message displayed
+    And user is on the login page
+    And User enters "<valid E-mail>" and "<invalid password>"
+    And User presses login button or presses enter
+    Then user sees Wrong login/password message displayed
+
 
 
     @UPGNX10-224
     Examples:Email-Password
-      | invalid E-mail         | valid password |
-      | salesmanager4@info.com | salesmanager   |
-      | salesmanager3@info.com | salesmanager   |
-      | salesmanager2@info.com | salesmanager   |
-      | salesmanager1@info.com | salesmanager   |
-      | salesmanager5@info.com | salesmanager   |
+      | invalid E-mail         | valid password | valid E-mail            | invalid password |
+      | salesmanager4@info.com | salesmanager   | salesmanager15@info.com | mama             |
+      | salesmanager3@info.com | salesmanager   | salesmanager15@info.com | mama             |
+      | salesmanager2@info.com | salesmanager   | salesmanager15@info.com | mama             |
+      | salesmanager1@info.com | salesmanager   | salesmanager15@info.com | mama             |
+      | salesmanager5@info.com | salesmanager   | salesmanager15@info.com | mama             |
 
 
 
