@@ -48,7 +48,7 @@ Feature: Default
       | salesmanager1@info.com | salesmanager   | salesmanager15@info.com | mama             |
       | salesmanager5@info.com | salesmanager   | salesmanager15@info.com | mama             |
 
-  @UPGNX10-224
+
   Scenario: AC3- "Please fill out this field" message should be displayed if the password or username is empty
     Given user is on the login page
     When User leaves username box empty
@@ -58,6 +58,12 @@ Feature: Default
     When User leaves password box empty
     And User presses login button or presses enter
     Then user should see Please fill out this field text on the page
+
+  @UPGNX10-224
+  Scenario: AC4- User should see the password in bullet signs by default while typing (like ****)
+    Given user is on the login page
+    When user enters password
+    Then user should see bullet signs by default
 
 
 
