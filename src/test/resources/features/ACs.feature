@@ -58,7 +58,7 @@ Feature: Default
     And user is on the login page
     When User leaves password box empty
     And User presses login button or presses enter
-    Then user should see Please fill out this field text on the page
+    Then user should see Please fill out this field text on the page(password empty)
 
   @UPGNX10-234
   Scenario: AC4- User should see the password in bullet signs by default while typing (like ****)
