@@ -14,8 +14,8 @@ Feature: Default
       | E-mail                  | password     |
       | salesmanager15@info.com | salesmanager |
       | salesmanager16@info.com | salesmanager |
-      | salesmanager17@info.com | salesmanager |
-      | salesmanager18@info.com | salesmanager |
+      | posmanager20@info.com   | posmanager   |
+      | posmanager21@info.com   | posmanager   |
       | salesmanager19@info.com | salesmanager |
 
   Scenario: AC2- "Wrong login/password" message should be displayed for invalid credentials (valid username-invalid password and invalid username-valid password)
