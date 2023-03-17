@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
+                "pretty",
                 "json:target/cucumber.json",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
@@ -14,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "/com/stepDefinitions",
-        dryRun = false,
+        dryRun =false,
         tags = "@UPGNX10-224" //Tag verdiğin yeri execute'luyo sadece.
                             // --"or, and, and not" keyword'leriyle birden fazla executable scenario oluşturabiliyoruz--
 )

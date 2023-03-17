@@ -13,11 +13,11 @@ public class AC1StepDefinition {
     public void user_is_on_the_login_page() {
         Driver.getDriver().get(" https://qa.upgenix.net/web/login");
     }
-    @When("User enters Valid E-mail address and password")
-    public void user_enters_valid_e_mail_address_and_password() {
+    @When("User enters Valid {string} address and {string}")
+    public void user_enters_valid_e_mail_address_and_password(String username, String password) {
 
-        loginPage.usernameBox.sendKeys("salesmanager15@info.com");
-        loginPage.passwordBox.sendKeys("salesmanager");
+        loginPage.usernameBox.sendKeys(username);
+        loginPage.passwordBox.sendKeys(password);
 
     }
     @Then("User clicks the Login button or presses Enter")
