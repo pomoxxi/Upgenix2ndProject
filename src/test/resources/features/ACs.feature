@@ -1,5 +1,6 @@
-Feature: Default
 
+Feature: Default
+  @UPGNX10-224
   Scenario: AC1-Users can log in with valid credentials (We have 5 types of users but will test only 2 user: PosManager, SalesManager)
     Given User is on the login page
     When User enters Valid "salesmanager15@info.com" address and "salesmanager"
@@ -28,7 +29,7 @@ Feature: Default
     And User presses login button or presses enter
     Then user sees Wrong login/password message displayed
 
-
+  @UPGNX10-226
   Scenario Outline: AC2- "Wrong login/password" message should be displayed for invalid credentials (valid username-invalid password and invalid username-valid password)
     Given user is on the login page
     When User enters "<invalid E-mail>" and "<valid password>"
@@ -48,7 +49,7 @@ Feature: Default
       | salesmanager1@info.com | salesmanager   | salesmanager15@info.com | mama             |
       | salesmanager5@info.com | salesmanager   | salesmanager15@info.com | mama             |
 
-
+  @UPGNX10-232
   Scenario: AC3- "Please fill out this field" message should be displayed if the password or username is empty
     Given user is on the login page
     When User leaves username box empty
@@ -59,13 +60,13 @@ Feature: Default
     And User presses login button or presses enter
     Then user should see Please fill out this field text on the page
 
-
+  @UPGNX10-234
   Scenario: AC4- User should see the password in bullet signs by default while typing (like ****)
     Given user is on the login page
     When user enters password
     Then user should see bullet signs by default
 
-  @UPGNX10-224
+  @UPGNX10-235
   Scenario: AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
     Given user is on the login page
     When user enters Email and password
