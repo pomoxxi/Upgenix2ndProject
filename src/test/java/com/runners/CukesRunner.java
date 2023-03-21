@@ -16,8 +16,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "/com/stepDefinitions",
         dryRun =false,
-        tags = "@UPGNX10-232" //Tag verdiğin yeri execute'luyo sadece.
+        tags = "@whole" //Tag verdiğin yeri execute'luyo sadece.
                             // --"or, and, and not" keyword'leriyle birden fazla executable scenario oluşturabiliyoruz--
 )
 public class CukesRunner {
+
 }
