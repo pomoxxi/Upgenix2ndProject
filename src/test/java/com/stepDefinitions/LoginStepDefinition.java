@@ -3,7 +3,6 @@ package com.stepDefinitions;
 import com.pages.LoginPage;
 import com.utilities.Driver;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -13,7 +12,7 @@ public class LoginStepDefinition {
 
     LoginPage loginPage = new LoginPage();
 
-    @When("User is on the login page")
+    @When("user is on the login page")
     public void user_is_on_the_login_page() {
         Driver.getDriver().get(" https://qa.upgenix.net/web/login");
     }
