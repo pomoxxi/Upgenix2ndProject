@@ -16,3 +16,14 @@
 ## AC4- User should see the password in bullet signs by default while typing (like ****)
 
 ## AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+
+
+
+## Test Case 1: Log out Functionality
+> My environement: https://qa.upgenix.net/web/login/
+
+## AC1- User can log out and ends up in login page.
+
+## AC2- The user can not go to the home page again by clicking the step back button after successfully logged out.
+
+## AC3- The user must be logged out if the user closes the open tab (all tabs if there are multiple open tabs)
