@@ -1,6 +1,6 @@
 # In this project I automated a webside accordingly to a list of requirements
 
-## Test Case 1: Login Functionality
+# Test Case 1: Login Functionality
 
 ## In this project I also handled "Please fill out this field" message.
 > My environement: https://qa.upgenix.net/web/login/
@@ -19,7 +19,7 @@
 
 
 
-## Test Case 1: Log out Functionality
+# Test Case 1: Log out Functionality
 > My environement: https://qa.upgenix.net/web/login/
 
 ## AC1- User can log out and ends up in login page.
